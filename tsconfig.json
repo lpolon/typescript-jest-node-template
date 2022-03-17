@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
     "target": "es2017",
-    "module": "commonjs",
     "lib": ["dom", "es6", "es2017", "esnext.asynciterable"],
-    "sourceMap": true,
+    "module": "commonjs",
     "moduleResolution": "node",
+    "sourceMap": true,
     "removeComments": true,
     "strict": true,
     "useUnknownInCatchVariables": true,
@@ -17,9 +17,9 @@
     "resolveJsonModule": true,
     "outDir": "dist",
     "baseUrl": ".",
-    "paths": {
-      "src/*": ["src/*"]
-    }
+  },
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
   },
   "exclude": ["node_modules"],
   "include": ["./src/**/*.ts", "./types/api.d.ts", "global.d.ts"]
